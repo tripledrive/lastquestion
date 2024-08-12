@@ -5,6 +5,7 @@ function submit_teamkey(){
         console.log("ok")
         window.location.href = './mypage.html?team_no='+team_no+'&team_key='+document.getElementById("team_key").value
     }else{
+        document.getElementById('message').innerHTML = "認証失敗"
         console.log("no")
     }
 }

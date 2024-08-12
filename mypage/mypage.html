@@ -4,10 +4,60 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./index.css" type="text/css">
-        <title>title</title>
+        <title>謎の王道 | マイページ</title>
     </head>
     <body>
-    <div id="main"></div>
+    <img src="../img/2024_0730_3.png" id="logo">
+    <div id="header"></div>
+    <div id="console">
+        <div id="on-top" class="button onbutton">Top</div>
+        <div id="on-rules" class="button">Rule</div>
+        <div id="on-stats" class="button">Status</div>
+    </div>
+    <div id="top">
+        <h2>遊び方</h2>
+        <img src="../img/rule1.png" class="rule-cards"><br>
+        <img src="../img/rule2.png" class="rule-cards"><br>
+        <img src="../img/rule3.png" class="rule-cards"><br>
+        <br>
+        <div style="font-size: small;">詳しいルールは「Rule」ボタンを押して確認できるぞ</div>
+    </div>
+    <div id="rules" style="font-size: small;" class="none">
+        <h2>ルール説明</h2>
+        <div style="text-align: left;">
+        本ゲームのクリア条件は、「最後の謎」を攻略することです。<br>
+        みなさんはチームでミッション（謎解き）をクリアしたり、サブイベントに参加することによって「最後の謎」への挑戦権を獲得することができます。<br>
+        「最後の謎」には、チケットを持っている限り何度でも挑戦可能。<br>
+        繰り返しプレイして情報を集めることが攻略の秘訣です。
+        </div>
+        <h3>遊び方</h3>
+        <div style="text-align: left;">
+        <div style="text-align: center;font-size: medium;font-weight:bolder;">「ミッション」について</div>
+        会場内にあるQRコードを読み取ることで、「ミッション」（謎解き）に挑戦することができます。<br>
+        見事ミッションを解き明かすことができたらクリア画面が現れるので、チーム番号を入力してクリア報告を行ってください。<br>
+        クリア報告後、しばらくするとチームの「Status」画面にミッションをクリアした情報が登録されます。<br>
+        任意のタイミングで「謎解きカウンター」にてクリア報告を行うことで、「小部屋チケット」を入手できます。<br><br>
+        <div style="text-align: center;font-size: medium;font-weight:bolder;">「サブイベント」について</div>
+        皆さんはイベント中、好きなタイミングで各種サブイベントに参加することができます。（ガンスリンガー、百人一首）<br>
+        サブイベントへの参加後、「最後の謎」を有利に進めるためのヒントを入手できるため、積極的にサブイベントにも参加しましょう。<br>
+        また、各プレイヤーは一人1回までサブイベントに参加することによっても「小部屋チケット」を入手できます。<br>
+        サブイベントへの参加は「最後の謎」を解く上で必須です。ぜひご参加ください。<br><br>
+        <div style="text-align: center;font-size: medium;font-weight:bolder;">「小部屋チケット」について</div>
+        「小部屋チケット」は謎解きカウンターで使用することができます。<br>
+        切り離されていない状態のチケットを使って「最後の謎」への挑戦を予約できます。<br>
+        詳しくは謎解きカウンターでお尋ねください。
+        </div>
+        <h3>注意事項</h3>
+        <div style="text-align: left;">
+        本ゲームは主にWeb上で進行しますが、URL・ソースコード・コンソールに必要な情報はありません。<br>
+        すべての謎は画面上、あるいは会場内に提示されている情報のみで解き明かすことができます。<br>
+        ソースコードの閲覧やURLを手打ちしての攻略は禁止とし、発覚次第イベントの景品受け取りの権利を剥奪します。<br>
+        <br>
+        ゲームが進行不能になった、何か不都合な出来事が起きた、など、謎解きに関するトラブルが発生した場合、「謎解きカウンター」にいる運営スタッフにお声がけください。<br>
+        謎解きの対応が可能なスタッフは限られており、対応に時間を要する場合がございますが、あらかじめご了承ください。
+        </div>
+    </div>
+    <div id="stats" class="none"></div>
         <script src="./database.js"></script>
         <script src="./mypage.js"></script>
     </body>
