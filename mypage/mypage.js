@@ -10,14 +10,19 @@ window.addEventListener('load',function() {
     var Q1_TEXT = ""
 
     if(userstatus.Q1 == "0"){
-        Q1_TEXT = "ミッション01 : 未クリア"
+        Q1_TEXT = "未クリア"
     }else if(userstatus.Q1 == "1"){ 
-        Q1_TEXT = "ミッション01 : クリア済"
+        Q1_TEXT = "クリア済"
+    }else if(userstatus.Q1 == "2"){ 
+        Q1_TEXT = "クリア済(チケット引き換え済)"
     }
 
-    //テスト出力用
     document.getElementById('header').insertAdjacentHTML('beforeend',"チーム"+url.searchParams.getAll('team_no')[0] + "の情報を表示中<br>")
-    document.getElementById('stats').insertAdjacentHTML('beforeend',Q1_TEXT + "<br>")
+    document.getElementById('Q1').insertAdjacentHTML('beforeend',Q1_TEXT + "<br>")
+    if(userstatus.Q1 == "1"){
+        document.getElementById("mss_q1").classList.remove('none')
+        document.getElementById("out_q1").classList.remove('none')
+    }
 });
 
 document.getElementById("on-top").onclick = function() {
@@ -46,3 +51,18 @@ document.getElementById("on-stats").onclick = function() {
     document.getElementById("on-rules").classList.remove('onbutton')
     document.getElementById("on-stats").classList.add('onbutton')
 }
+
+window.addEventListener('load',function() {  
+    // リクエストクエリを取得してQRコードを生成する
+    const url = new URL(window.location.href);
+    var team_no = url.searchParams.getAll('team_no')
+    var inp01 = "https://rigorous-bramble-aster.glitch.me/?contents=&team_no="+team_no+"&mission=1"
+    document.getElementById('out_q1').textContent = '';
+      // QRコード作成
+    var qrcode_1 = new QRCode('out_q1', {
+        text:  inp01,
+        width: 128,
+        height: 128,
+        correctLevel : QRCode.CorrectLevel.H 
+    })
+});

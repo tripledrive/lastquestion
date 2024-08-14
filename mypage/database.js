@@ -2,7 +2,7 @@ const database = [
     {
         "teamId":"0",
         "teamCode":"TEST",
-        "Q1":"0",
+        "Q1":"2",
         "M1":"1",
     }
 ]
