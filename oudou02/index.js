@@ -11,5 +11,5 @@ function submit_answer(){
 }
 
 document.getElementById("ch_button").onclick = function() {
-    window.location.href = "./kk303.html"
+    window.location.href = "./s0sd2.html"
 }
