@@ -48,3 +48,7 @@ body{
 .out_qr{
     margin-left: 32%;
 }
+
+.out_qr img{
+    border: solid 5px #FFF;
+}
