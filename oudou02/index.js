@@ -1,10 +1,10 @@
 function submit_answer(){
-    if(document.getElementById("answer").value == "イメンブーゴ"){
-        window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=ミッション1「魚骨の王道」"
-    }else if(document.getElementById("answer").value == "イメン＝ブーゴ"){
-        window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=ミッション1「魚骨の王道」"
-    }else if(document.getElementById("answer").value == "イメン=ブーゴ"){
-        window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=ミッション1「魚骨の王道」"
+    if(document.getElementById("answer").value == "クリスタブララーサ"){
+        window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=ミッション2「推測の王道」"
+    }else if(document.getElementById("answer").value == "クリス=タブラ=ラーサ"){
+        window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=ミッション2「推測の王道」"
+    }else if(document.getElementById("answer").value == "クリス＝タブラ＝ラーサ"){
+        window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=ミッション2「推測の王道」"
     }else{
         document.getElementById("msg").classList.remove('none');
     }
