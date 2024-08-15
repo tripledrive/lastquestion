@@ -1,10 +1,6 @@
 function submit_answer(){
-    if(document.getElementById("answer").value == "クリスタブララーサ"){
-        window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=ミッション2「推測の王道」"
-    }else if(document.getElementById("answer").value == "クリス=タブラ=ラーサ"){
-        window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=ミッション2「推測の王道」"
-    }else if(document.getElementById("answer").value == "クリス＝タブラ＝ラーサ"){
-        window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=ミッション2「推測の王道」"
+    if(document.getElementById("answer").value == "ろうどう"){
+        window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=ミッション3「過去の王道」"
     }else{
         document.getElementById("msg").classList.remove('none');
     }
