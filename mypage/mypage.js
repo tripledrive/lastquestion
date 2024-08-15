@@ -56,7 +56,7 @@ window.addEventListener('load',function() {
     // リクエストクエリを取得してQRコードを生成する
     const url = new URL(window.location.href);
     var team_no = url.searchParams.getAll('team_no')
-    var inp01 = "https://rigorous-bramble-aster.glitch.me/?contents=&team_no="+team_no+"&mission=1"
+    var inp01 = "https://island-juniper-narwhal.glitch.me/?contents=&team_no="+team_no+"&mission=1"
     document.getElementById('out_q1').textContent = '';
       // QRコード作成
     var qrcode_1 = new QRCode('out_q1', {
