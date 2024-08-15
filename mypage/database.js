@@ -1,5 +1,5 @@
 const database = [
-    {"teamId":"0","teamCode":"TEST","Q1":"2","Q2":"1","Q3":"1","Q4":"1",},
+    {"teamId":"0","teamCode":"TEST","Q1":"2","Q2":"0","Q3":"0","Q4":"0",},
     {"teamId":"1","teamCode":"PYGAC","Q1":"0","Q2":"0","Q3":"0","Q4":"0"},
     {"teamId":"2","teamCode":"ACZFA","Q1":"0","Q2":"0","Q3":"0","Q4":"0"},
     {"teamId":"3","teamCode":"CXRLS","Q1":"0","Q2":"0","Q3":"0","Q4":"0"},
