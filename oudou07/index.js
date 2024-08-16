@@ -47,5 +47,5 @@ function submit_answer_6(){
 }
 
 document.getElementById("ch_button").onclick = function() {
-    window.location.href = "./qk0p1.html"
+    window.location.href = "./od7s1.html"
 }
