@@ -11,6 +11,9 @@ window.addEventListener('load',function() {
     var Q2_TEXT = ""
     var Q3_TEXT = ""
     var Q4_TEXT = ""
+    var Q5_TEXT = ""
+    var Q6_TEXT = ""
+    var Q7_TEXT = ""
 
     if(userstatus.Q1 == "0"){
         Q1_TEXT = "未クリア"
@@ -44,12 +47,39 @@ window.addEventListener('load',function() {
         Q4_TEXT = "クリア済(チケット引き換え済)"
     }
 
+    if(userstatus.Q5 == "0"){
+        Q5_TEXT = "未クリア"
+    }else if(userstatus.Q5 == "1"){ 
+        Q5_TEXT = "クリア済"
+    }else if(userstatus.Q5 == "2"){ 
+        Q5_TEXT = "クリア済(チケット引き換え済)"
+    }
+
+    if(userstatus.Q6 == "0"){
+        Q6_TEXT = "未クリア"
+    }else if(userstatus.Q6 == "1"){ 
+        Q6_TEXT = "クリア済"
+    }else if(userstatus.Q6 == "2"){ 
+        Q6_TEXT = "クリア済(チケット引き換え済)"
+    }
+
+    if(userstatus.Q7 == "0"){
+        Q7_TEXT = "未クリア"
+    }else if(userstatus.Q7 == "1"){ 
+        Q7_TEXT = "クリア済"
+    }else if(userstatus.Q7 == "2"){ 
+        Q7_TEXT = "クリア済(チケット引き換え済)"
+    }
+
 
     document.getElementById('header').insertAdjacentHTML('beforeend',"チーム"+url.searchParams.getAll('team_no')[0] + "の情報を表示中<br>")
     document.getElementById('Q1').insertAdjacentHTML('beforeend',Q1_TEXT + "<br>")
     document.getElementById('Q2').insertAdjacentHTML('beforeend',Q2_TEXT + "<br>")
     document.getElementById('Q3').insertAdjacentHTML('beforeend',Q3_TEXT + "<br>")
     document.getElementById('Q4').insertAdjacentHTML('beforeend',Q4_TEXT + "<br>")
+    document.getElementById('Q5').insertAdjacentHTML('beforeend',Q5_TEXT + "<br>")
+    document.getElementById('Q6').insertAdjacentHTML('beforeend',Q6_TEXT + "<br>")
+    document.getElementById('Q7').insertAdjacentHTML('beforeend',Q7_TEXT + "<br>")
     if(userstatus.Q1 == "1"){
         document.getElementById("mss_q1").classList.remove('none')
         document.getElementById("out_q1").classList.remove('none')
@@ -65,6 +95,18 @@ window.addEventListener('load',function() {
     if(userstatus.Q4 == "1"){
         document.getElementById("mss_q4").classList.remove('none')
         document.getElementById("out_q4").classList.remove('none')
+    }
+    if(userstatus.Q5 == "1"){
+        document.getElementById("mss_q5").classList.remove('none')
+        document.getElementById("out_q5").classList.remove('none')
+    }
+    if(userstatus.Q6 == "1"){
+        document.getElementById("mss_q6").classList.remove('none')
+        document.getElementById("out_q6").classList.remove('none')
+    }
+    if(userstatus.Q7 == "1"){
+        document.getElementById("mss_q7").classList.remove('none')
+        document.getElementById("out_q7").classList.remove('none')
     }
 });
 
@@ -134,6 +176,36 @@ window.addEventListener('load',function() {
       // QRコード作成
     var qrcode_4 = new QRCode('out_q4', {
         text:  inp04,
+        width: 128,
+        height: 128,
+        correctLevel : QRCode.CorrectLevel.H 
+    })
+
+    var inp05 = "https://island-juniper-narwhal.glitch.me/?contents=&team_no="+team_no+"&mission=5"
+    document.getElementById('out_q5').textContent = '';
+      // QRコード作成
+    var qrcode_5 = new QRCode('out_q5', {
+        text:  inp05,
+        width: 128,
+        height: 128,
+        correctLevel : QRCode.CorrectLevel.H 
+    })
+
+    var inp06 = "https://island-juniper-narwhal.glitch.me/?contents=&team_no="+team_no+"&mission=6"
+    document.getElementById('out_q6').textContent = '';
+      // QRコード作成
+    var qrcode_6 = new QRCode('out_q6', {
+        text:  inp06,
+        width: 128,
+        height: 128,
+        correctLevel : QRCode.CorrectLevel.H 
+    })
+
+    var inp07 = "https://island-juniper-narwhal.glitch.me/?contents=&team_no="+team_no+"&mission=4"
+    document.getElementById('out_q7').textContent = '';
+      // QRコード作成
+    var qrcode_7 = new QRCode('out_q7', {
+        text:  inp07,
         width: 128,
         height: 128,
         correctLevel : QRCode.CorrectLevel.H 
