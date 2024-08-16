@@ -201,7 +201,7 @@ window.addEventListener('load',function() {
         correctLevel : QRCode.CorrectLevel.H 
     })
 
-    var inp07 = "https://island-juniper-narwhal.glitch.me/?contents=&team_no="+team_no+"&mission=4"
+    var inp07 = "https://island-juniper-narwhal.glitch.me/?contents=&team_no="+team_no+"&mission=7"
     document.getElementById('out_q7').textContent = '';
       // QRコード作成
     var qrcode_7 = new QRCode('out_q7', {
