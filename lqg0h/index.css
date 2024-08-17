@@ -46,9 +46,6 @@ body{
     display: flex;
 }
 
-.none{
-    display: none;
-}
 
 .button{
     width:30%;
@@ -73,7 +70,8 @@ body{
 }
 
 #qr{
-    margin-left: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 .question{
@@ -92,4 +90,9 @@ body{
     margin-left: 25%;
     background-color: aliceblue;
     color: #000;
+}
+
+
+.none{
+    display: none;
 }

@@ -23,10 +23,6 @@ body{
     display: flex;
 }
 
-.none{
-    display: none;
-}
-
 .button{
     width:30%;
     height:25px;
@@ -46,9 +42,20 @@ body{
 }
 
 .out_qr{
-    margin-left: 32%;
+    display: flex;
+    justify-content: center;
 }
 
 .out_qr img{
     border: solid 5px #FFF;
+}
+
+
+.none{
+    display: none;
+}
+
+
+#stats{
+    font-size: small;
 }
