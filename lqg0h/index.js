@@ -26,5 +26,6 @@ function gen_QR(team_no) {
 
 
 function submit_ss(){
+    var team_no = document.getElementById('tb').value;
     window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=&team_no="+team_no+"&mission=SUBEVENT"
 }
