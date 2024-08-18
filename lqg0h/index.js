@@ -23,3 +23,8 @@ function gen_QR(team_no) {
     })
     document.getElementById("hint").classList.remove('none')
 }
+
+
+function submit_ss(){
+    window.location.href = "https://island-juniper-narwhal.glitch.me/?contents=&team_no="+team_no+"&mission=SUBEVENT"
+}
